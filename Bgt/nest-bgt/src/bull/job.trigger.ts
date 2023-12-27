@@ -8,13 +8,4 @@ import * as fs from 'fs/promises';
 import { parse } from 'csv-parse';
 
 @Processor("upload") // eslint-disable-line
-export class CreateEntry {
-  constructor(
-    @InjectRepository(DbEntity) private readonly csvRepo: Repository<DbEntity>,
-  ) {}
-    @Process("upload-job") // eslint-disable-line
-  async createEntry(job: Job<any>) {
-    const newData = this.csvRepo.create({ data: job.data.data });
-    await this.csvRepo.save(newData);
-  }
-}
+export class CreateEntry {}

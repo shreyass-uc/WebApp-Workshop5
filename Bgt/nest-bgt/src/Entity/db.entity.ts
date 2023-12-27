@@ -10,11 +10,3 @@ export class DbEntity {
   @Column({ type: 'jsonb', nullable: true })
   data: any; // You can use `user-defined` to represent JSONB data
 }
-
-
-
-
-
-
-
-
