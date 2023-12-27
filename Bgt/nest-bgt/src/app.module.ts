@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { BullModule } from '@nestjs/bull';
-import { UnblockJob } from './bull/job.trigger';
+import { CreateEntry } from './bull/job.trigger';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DbEntity } from 'src/Entity/db.entity';
 
@@ -30,6 +30,6 @@ import { DbEntity } from 'src/Entity/db.entity';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService, UnblockJob],
+  providers: [AppService, CreateEntry],
 })
 export class AppModule {}
