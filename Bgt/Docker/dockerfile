@@ -8,6 +8,8 @@ LABEL maintainer="UniCourt" \
 
 WORKDIR /home/Bgt/nest-bgt
 
+RUN npm install -g @nestjs/cli
+
 COPY Bgt/nest-bgt/package.json ./
 
 RUN npm install

@@ -10,6 +10,8 @@ WORKDIR /home/Backend/nest-backend
 
 COPY Backend/nest-backend/package.json ./
 
+RUN npm install -g @nestjs/cli
+
 RUN npm install
 
 COPY Backend/nest-backend/ ./
