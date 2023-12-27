@@ -8,4 +8,4 @@ COPY Frontend/angular-frontend/*.json ./
 
 RUN npm install 
 
-COPY ./Frontend/angular-frontend .
+COPY ./Frontend/angular-frontend ./
