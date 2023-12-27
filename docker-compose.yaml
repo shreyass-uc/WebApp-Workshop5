@@ -42,7 +42,7 @@ services:
         image: testing_frontend_angular:latest
         build:
             context: ./
-            dockerfile: Frontend/Docker/Dockerfile
+            dockerfile: Frontend/Docker/dockerfile
             target: development
         ports:
             - "4200:4200"
